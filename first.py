@@ -40,3 +40,15 @@ for i in range(4):
         elif df[df.columns[3 + i]][j] == "5(得意）":
             df[df.columns[3 + i]][j] = 5
 #%%
+for i in range(2):
+    for j in range(len(df.index)):
+        if "ない" in df[df.columns[7 + i]][j] or \
+                "ありません" in df[df.columns[7 + i]][j] or \
+                "無し" in df[df.columns[7 + i]][j] or \
+                "無い" in df[df.columns[7 + i]][j] or \
+                "none" in df[df.columns[7 + i]][j] or \
+                "なかった" in df[df.columns[7 + i]][j] or \
+                "didin't" in df[df.columns[7 + i]][j] or \
+                "なし" in df[df.columns[7 + i]][j]:
+            df[df.columns[7 + i]][j] = "なし"
+#%%
