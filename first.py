@@ -162,3 +162,7 @@ for i in range(len(df.index)):
     elif df[df.columns[15]][i] == "全く自主性を持ってこなかった":
         df[df.columns[15]][i] = "1"
 #%%
+df[df.columns[12]] = df[df.columns[12]].replace('(.*)時間(.*)', r'\1\2', regex=True)
+#%%
+df[df.columns[13]] = df[df.columns[13]].replace('(.*)時間(.*)', r'\1\2', regex=True)
+#%%
