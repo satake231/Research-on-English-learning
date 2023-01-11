@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv("-4.csv", sep=",")
+df = pd.read_csv("../Database/-4.csv", sep=",")
 
 df = df.reset_index()
 lists = df.iloc[0]
@@ -54,7 +54,7 @@ for i in range(2):
                 "無い" in df[df.columns[7 + i]][j] or \
                 "none" in df[df.columns[7 + i]][j] or \
                 "なかった" in df[df.columns[7 + i]][j] or \
-                "didin't" in df[df.columns[7 + i]][j] or \
+                "didn't" in df[df.columns[7 + i]][j] or \
                 "なし" in df[df.columns[7 + i]][j]:
             df[df.columns[7 + i]][j] = "なし"
 #%%
@@ -117,7 +117,7 @@ for i in range(len(df.index)):
     else:
         df[df.columns[9]][i] = np.nan
 #%%
-df.to_excel("pre_dataframe.xlsx")
+df.to_excel("../Database/pre_dataframe.xlsx")
 #%%
 for i in range(len(df.index)):
     if df[df.columns[10]][i] == "毎日":
