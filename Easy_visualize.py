@@ -1,6 +1,8 @@
 #%%
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+#%%
 
 df = pd.read_csv("-4.csv", sep=",")
 
@@ -117,8 +119,6 @@ for i in range(len(df.index)):
     else:
         df[df.columns[9]][i] = np.nan
 #%%
-df.to_excel("pre_dataframe.xlsx")
-#%%
 for i in range(len(df.index)):
     if df[df.columns[10]][i] == "毎日":
         df[df.columns[10]][i] = "5"
@@ -166,9 +166,54 @@ for i in range(len(df.index)):
     elif df[df.columns[15]][i] == "全く自主性を持ってこなかった":
         df[df.columns[15]][i] = "1"
 #%%
+def make_barplot(df, name):
+    labels = df[name].value_counts().index.sort_values()
+    metrics = df[name].value_counts().sort_index()
+    x = np.arange(len(labels))
+    width = 0.35
+
+    fig, ax = plt.subplots()
+
+    rect = ax.bar(x, metrics, width, color=["red", "blue", 'yellow', 'green', 'purple', 'orange', 'black', 'pink'])
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels)
+    def autolabel(rects):
+        for rect in rects:
+            height = rect.get_height()
+            ax.annotate('{}'.format(height),
+                        xy=(rect.get_x() + rect.get_width() / 2, height),
+                        xytext=(0, 3),
+                        textcoords="offset points",
+                        ha='center', va='bottom')
+    autolabel(rect)
+    plt.title(name)
+    plt.savefig("Images/graph_"+name+"_.png", format="png")
+    plt.show()
+#%%
+make_barplot(df, df.columns[1])
+#%%
+make_barplot(df, df.columns[2])
+#%%
+make_barplot(df, df.columns[3])
+#%%
+make_barplot(df, df.columns[4])
+#%%
+make_barplot(df, df.columns[5])
+#%%
+make_barplot(df, df.columns[6])
+#%%
+make_barplot(df, df.columns[9])
+#%%
+make_barplot(df, df.columns[10])
+#%%
+make_barplot(df, df.columns[11])
+#%%
+make_barplot(df, df.columns[14])
+#%%
+make_barplot(df, df.columns[15])
+#%%
 df[df.columns[12]] = df[df.columns[12]].replace('(.*)時間(.*)', r'\1\2', regex=True)
 #%%
 df[df.columns[13]] = df[df.columns[13]].replace('(.*)時間(.*)', r'\1\2', regex=True)
-#%%
-df.to_excel("dataframe.xlsx")
+# 5~6 などの表現の場合は中央値を、「覚えていない」などは欠損値とし、手動で変更を行った
 #%%

@@ -1,4 +1,4 @@
-無題のフォーム-2
+無題のフォーム-4
 タイムスタンプ,Please tell us your gender. あなたの性別を教えてください。,Please tell us your occupation. 現在の職業を教えてください。,Please tell us about your attitudes toward English. あなたの英語に対する意識を教えてください。 [Reading ],Please tell us about your attitudes toward English. あなたの英語に対する意識を教えてください。 [Writing],Please tell us about your attitudes toward English. あなたの英語に対する意識を教えてください。 [Listening],Please tell us about your attitudes toward English. あなたの英語に対する意識を教えてください。 [Speaking],Please tell us about your English learning before entering elementary school (multiple choice). 小学校入学前での英語への触れ方について教えてください（複数選択）。,Please tell us about your English learning after entering elementary school (multiple choice). 小学校入学後での英語への触れ方について教えてください（複数選択）。,Please tell us your highest CEFR (refer to the photo if necessary). あなたの最高CEFRを教えてください（任意で写真を参照）。,How  often did you use English(except  for English classes or tests)? 英語の授業やテスト以外で英語を使用した経験はどのくらいありますか？,How well does your family speak English? あなたの家族はどのくらい英語を話せますか？,How many hours in a week (in average) did you study English when you were a junior high school student? 中学生の時の英語の学習時間は、週平均何時間でしたか？,How many hours in a week (in average) did you study English when you were a high school student? 高校生の時の英語の学習時間は、週平均何時間でしたか？,Do you think learning English before elementary school is useful? 小学生以前の英語学習は役に立つと思いますか？,How much independent exposure have you had to the English language so far?  これまでどの程度自主性を持って触れてきましたか（学校の英語の予習・復習や塾、英会話など）。
 2023/01/04 10:29:02 午後 GMT+9,male 男性,university student 大学生,3,3,2,2,アニメ/映画等,学校,B1,週に4~5回,ほとんど話せないが単語のみなら可能,1くらい,2くらい,とても役に立つと思う,どちらかというと自主性を持ってきた
 2023/01/04 10:29:20 午後 GMT+9,female 女性,university student 大学生,4,5(得意）,2,3,特になし,学校,B1,月に3~4回,ほとんど話せないが単語のみなら可能,15時間,20-25時間,どちらかというと役に立たないと思う,どちらかというと自主性を持ってきた
@@ -98,3 +98,18 @@
 2023/01/10 3:21:35 午後 GMT+9,female 女性,university student 大学生,2,3,1(苦手）,1(苦手）,なし,学校,b1,ほとんどない,ほとんど話せないが単語のみなら可能,10,20,どちらかというと役に立つと思う,どちらかというと自主性を持ってこなかった
 2023/01/10 3:21:39 午後 GMT+9,female 女性,high school student 高校生,3,2,2,3,英会話,英会話;学校;塾,A2,ほとんどない,全く話せない,5,15,どちらかというと役に立たないと思う,どちらかというと自主性を持ってこなかった
 2023/01/10 3:22:11 午後 GMT+9,male 男性,university student 大学生,3,3,3,3,ほぼ触れていない,ほぼ触れていない,B2,ほとんどない,ほとんど話せないが単語のみなら可能,3,3,どちらかというと役に立たないと思う,どちらかというと自主性を持ってきた
+2023/01/10 3:25:36 午後 GMT+9,male 男性,university student 大学生,4,3,2,2,公文(リスニング、リーディング),英検/英検Jr.;学校;塾,B2,ほとんどない,簡単な会話なら可能,0.5時間,1時間,とても役に立つと思う,全く自主性を持ってこなかった
+2023/01/10 3:34:38 午後 GMT+9,female 女性,university student 大学生,3,2,4,3,幼稚園で英語に触れていた,英検/英検Jr.,B1,ほとんどない,ほとんど話せないが単語のみなら可能,7時間,11時間,どちらかというと役に立つと思う,どちらかというと自主性を持ってこなかった
+2023/01/10 3:48:39 午後 GMT+9,female 女性,high school student 高校生,2,2,4,2,なし,英会話;英検/英検Jr.;学校;塾,B1,ほとんどない,ほとんど話せないが単語のみなら可能,4時間,2時間,とても役に立つと思う,どちらかというと自主性を持ってこなかった
+2023/01/10 3:51:10 午後 GMT+9,male 男性,others その他,2,2,2,1(苦手）,アニメ/映画等,アニメ/映画等;学校,B1,ほとんどない,ほとんど話せないが単語のみなら可能,1時間,1時間,とても役に立つと思う,どちらかというと自主性を持ってこなかった
+2023/01/10 4:20:05 午後 GMT+9,male 男性,university student 大学生,2,2,5(得意）,3,英会話,英会話;学校,なし,ほとんどない,簡単な会話なら可能,7時間,10時間,とても役に立つと思う,どちらかというと自主性を持ってこなかった
+2023/01/10 4:22:39 午後 GMT+9,male 男性,university student 大学生,4,4,2,2,絵本等,アニメ/映画等,B1,月に3~4回,簡単な会話なら可能,1時間,2時間,とても役に立つと思う,どちらかというと自主性を持ってこなかった
+2023/01/10 4:30:52 午後 GMT+9,female 女性,high school student 高校生,2,4,3,3,英会話;英検/英検Jr.;アニメ/映画等;絵本等,英会話;英検/英検Jr.;本;学校;塾,B2,月に3~4回,簡単な会話なら可能,6時間,8時間,とても役に立つと思う,とても自主性を持ってきた
+2023/01/10 4:37:50 午後 GMT+9,female 女性,university student 大学生,4,3,2,2,アニメ/映画等,アニメ/映画等;学校,B1,ほとんどない,ほとんど話せないが単語のみなら可能,6時間,8時間,どちらかというと役に立たないと思う,どちらかというと自主性を持ってきた
+2023/01/10 4:51:02 午後 GMT+9,female 女性,university student 大学生,3,1(苦手）,3,3,アニメ/映画等,学校;塾,A1,ほとんどない,ほとんど話せないが単語のみなら可能,1時間,1時間,どちらかというと役に立つと思う,全く自主性を持ってこなかった
+2023/01/10 5:18:05 午後 GMT+9,male 男性,university student 大学生,4,4,4,4,なし,英会話;英検/英検Jr.;本;学校,B2,ほとんどない,日常会話が可能,2時間,1時間,全く役に立たないと思う,とても自主性を持ってきた
+2023/01/10 5:18:32 午後 GMT+9,male 男性,university student 大学生,3,2,1(苦手）,3,音楽,アニメ/映画等;学校,B2,ほとんどない,簡単な会話なら可能,6,12,どちらかというと役に立つと思う,どちらかというと自主性を持ってきた
+2023/01/10 6:37:01 午後 GMT+9,female 女性,high school student 高校生,2,4,2,2,アニメ/映画等,英会話;アニメ/映画等;本;学校;塾,B1,週に2~3回,ほとんど話せないが単語のみなら可能,5~6時間,6~7時間,どちらかというと役に立つと思う,どちらかというと自主性を持ってきた
+2023/01/10 6:53:06 午後 GMT+9,male 男性,high school student 高校生,3,2,3,2,アニメ/映画等,アニメ/映画等;学校,1980,週に4~5回,簡単な会話なら可能,3,7,とても役に立つと思う,どちらかというと自主性を持ってきた
+2023/01/10 7:28:16 午後 GMT+9,female 女性,professional student 専門学生,3,3,2,2,アニメ/映画等,学校;塾,分からない,ほとんどない,簡単な会話なら可能,5時間,7時間,とても役に立つと思う,どちらかというと自主性を持ってきた
+2023/01/10 8:55:11 午後 GMT+9,male 男性,university student 大学生,5(得意）,2,3,4,なし,学校;塾,B1,月に3~4回,簡単な会話なら可能,8時間,10時間,どちらかというと役に立つと思う,どちらかというと自主性を持ってこなかった
