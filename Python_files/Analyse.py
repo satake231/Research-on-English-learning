@@ -15,6 +15,6 @@ plt.savefig('../Statistic_results/corr_heatmap.png', format='png')
 plt.show()
 # READINGとWRITING, LISTENINGとSPEAKING に弱い相関
 # READINGとSPEAKING は相関的に離れているが、他二つはどの分野とも結びつきの差が激しくない
-# EXPERIENCE EXCEPT SCHOOL はどの指標とも弱い相関(正確には無相関)がある
+# EXPERIENCE EXCEPT SCHOOL はどの指標とも超弱い相関(正確には無相関)がある
 # EXPOSURE は弱いが相関があると見てよさそう
 #%%
