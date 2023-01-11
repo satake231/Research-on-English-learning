@@ -145,3 +145,35 @@ make_ratio_compare_graph(df, "USEFUL", "CEFR")
 
 make_ratio_compare_graph(df, "EXPOSURE", "CEFR")
 #%%
+# EXPERIENCE EXCEPT SCHOOL
+make_ratio_compare_graph(df, "ENGLISH OF FAMILY", "EXPERIENCE EXCEPT SCHOOL")
+
+make_violinplot(df, "AVG_JUNIOR_HIGH", "EXPERIENCE EXCEPT SCHOOL")
+
+make_violinplot(df, "AVG_HIGH", "EXPERIENCE EXCEPT SCHOOL")
+
+make_ratio_compare_graph(df, "USEFUL", "EXPERIENCE EXCEPT SCHOOL")
+
+make_ratio_compare_graph(df, "EXPOSURE", "EXPERIENCE EXCEPT SCHOOL")
+#%%
+# ENGLISH OF FAMILY
+make_violinplot(df, "AVG_JUNIOR_HIGH", "ENGLISH OF FAMILY")
+
+make_violinplot(df, "AVG_HIGH", "ENGLISH OF FAMILY")
+
+make_ratio_compare_graph(df, "USEFUL", "ENGLISH OF FAMILY")
+
+make_ratio_compare_graph(df, "EXPOSURE", "ENGLISH OF FAMILY")
+#%%
+# USEFUL
+make_violinplot(df, "AVG_JUNIOR_HIGH", "USEFUL")
+
+make_violinplot(df, "AVG_HIGH", "USEFUL")
+
+make_ratio_compare_graph(df, "EXPOSURE", "USEFUL")
+#%%
+# EXPOSURE
+make_violinplot(df, "AVG_JUNIOR_HIGH", "EXPOSURE")
+
+make_violinplot(df, "AVG_HIGH", "EXPOSURE")
+#%%
