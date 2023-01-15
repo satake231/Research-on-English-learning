@@ -53,3 +53,35 @@ multiple_linear_regression(df, 'LISTENING')
 # SPEAKING
 multiple_linear_regression(df, 'SPEAKING')
 #%%
+df = pd.read_csv("../Database/cleansed_dataframe.csv")
+df = df.drop([df.columns[0], "TIME_STAMP"], axis=1)
+
+# GENDERのダミー化
+df.replace({'GENDER': {'M': 0, 'F': 1}}, inplace=True)
+
+# OCCUPATIONのone-hot-encoding
+occupation_ohe = pd.get_dummies(df['OCCUPATION'])
+df = pd.concat([df, occupation_ohe], axis=1)
+df.drop(['OCCUPATION', 'others'], axis=1, inplace=True)
+
+# CEFRの欠損値削除
+df = df[df["CEFR"].notna()]
+for i in range(len(df.CEFR)):
+    if df.CEFR.iloc[i] == 'A1':
+        df.CEFR.iloc[i] = 1
+    elif df.CEFR.iloc[i] == 'A2':
+        df.CEFR.iloc[i] = 2
+    elif df.CEFR.iloc[i] == 'B1':
+        df.CEFR.iloc[i] = 3
+    elif df.CEFR.iloc[i] == 'B2':
+        df.CEFR.iloc[i] = 4
+    elif df.CEFR.iloc[i] == 'C1':
+        df.CEFR.iloc[i] = 5
+    elif df.CEFR.iloc[i] == 'C2':
+        df.CEFR.iloc[i] = 6
+df.CEFR = df.CEFR.astype('int8')
+# B_なし、A_なし　の除外
+df.drop(['A_なし', 'B_なし'], axis=1, inplace=True)
+#%%
+multiple_linear_regression(df, "CEFR")
+#%%
