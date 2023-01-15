@@ -41,4 +41,3 @@ plt.show()
 # EXPERIENCE EXCEPT SCHOOL はどの指標とも超弱い相関(正確には無相関)がある
 # EXPOSURE は弱いが相関があると見てよさそう
 # AVG_JUNIOR_HIGHとAVG_HIGHには弱い相関
-#%%
