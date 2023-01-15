@@ -30,19 +30,7 @@ df.drop('CEFR', axis=1, inplace=True)
 # B_なし、A_なし　の除外
 df.drop(['A_なし', 'B_なし'], axis=1, inplace=True)
 #%%
-# READINGを目的変数とした重回帰
-linear_regression = LinearRegression()
-
-X = df.drop('READING', axis=1)
-y = df.READING
-model = sa.OLS(y,X)
-result = model.fit()
-result.summary()
-#%%
-f = open('../Statistic_results/a.txt', 'w')
-f.write(str(result.summary()))
-f.close()
-#%%
+# 重回帰用の関数作成
 def multiple_linear_regression(dataframe, dependent_name):
     linear_regression = LinearRegression()
     X = dataframe.drop(dependent_name, axis=1)
@@ -53,5 +41,15 @@ def multiple_linear_regression(dataframe, dependent_name):
     f.write(str(result.summary()))
     f.close()
 #%%
+# READINGを目的変数とした重回帰
 multiple_linear_regression(df, "READING")
+#%%
+# WRITING
+multiple_linear_regression(df, 'WRITING')
+#%%
+# LISTENING
+multiple_linear_regression(df, 'LISTENING')
+#%%
+# SPEAKING
+multiple_linear_regression(df, 'SPEAKING')
 #%%
