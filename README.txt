@@ -1,1 +1,4 @@
-To improve English skills of Japanese people, what we should do?
+・データの見方について
+    "coef"が係数。これが大きいほどその変数の変化が結果を大きく変えやすい。
+
+LISTENIGとB_アニメ映画が相関アリ
