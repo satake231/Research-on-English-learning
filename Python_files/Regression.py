@@ -94,3 +94,11 @@ def make_barplot(df, name):
 #%%
 make_barplot(tt, df.columns[1])
 #%%
+X = df['B_英会話']
+y = df['SPEAKING']
+model = sa.OLS(y, X)
+result = model.fit()
+f = open('../Statistic_results/{}.txt'.format('LISTENINGANDEIKAIWA'), 'w')
+f.write(str(result.summary()))
+f.close()
+#%%

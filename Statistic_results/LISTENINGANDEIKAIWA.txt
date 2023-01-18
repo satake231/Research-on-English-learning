@@ -1,0 +1,25 @@
+                                 OLS Regression Results                                
+=======================================================================================
+Dep. Variable:               SPEAKING   R-squared (uncentered):                   0.251
+Model:                            OLS   Adj. R-squared (uncentered):              0.244
+Method:                 Least Squares   F-statistic:                              37.21
+Date:                Tue, 17 Jan 2023   Prob (F-statistic):                    1.58e-08
+Time:                        15:55:05   Log-Likelihood:                         -244.47
+No. Observations:                 112   AIC:                                      490.9
+Df Residuals:                     111   BIC:                                      493.7
+Df Model:                           1                                                  
+Covariance Type:            nonrobust                                                  
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+B_英会話          2.1622      0.354      6.100      0.000       1.460       2.865
+==============================================================================
+Omnibus:                        1.554   Durbin-Watson:                   0.819
+Prob(Omnibus):                  0.460   Jarque-Bera (JB):                1.622
+Skew:                           0.256   Prob(JB):                        0.444
+Kurtosis:                       2.706   Cond. No.                         1.00
+==============================================================================
+
+Notes:
+[1] R² is computed without centering (uncentered) since the model does not contain a constant.
+[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.
