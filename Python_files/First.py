@@ -9,6 +9,7 @@ lists = df.iloc[0]
 df.columns = lists
 df = df.drop(0)
 df = df.reset_index(drop=True)
+df.to_excel("new_-4.xlsx")
 #%%
 name_lists = ["TIME_STAMP", "GENDER", "OCCUPATION", "READING", "WRITING", "LISTENING", "SPEAKING", "BEFORE ELEMENTARY",
               "AFTER ELEMENTARY", "CEFR", "EXPERIENCE EXCEPT SCHOOL", "ENGLISH OF FAMILY", "AVG_JUNIOR_HIGH",
