@@ -66,7 +66,7 @@ dummy.drop("Eminem", axis=1, inplace=True)
 #%%
 dummy = dummy.rename(columns={'日常生活': 'A_海外', 'なし': 'A_なし',
                               'アニメ/映画等': 'A_アニメ/映画等', '塾': 'A_塾', '学校': 'A_学校',
-                              '英検/英検Jr.': 'A_英検/英検Jr.', '本': 'A_音楽', '英会話': 'A_英会話'})
+                              '英検/英検Jr.': 'A_英検/英検Jr.', '本':'A_本', '音楽': 'A_音楽','英会話': 'A_英会話'})
 df = pd.concat([df, dummy*1], axis=1)
 df.drop("AFTER ELEMENTARY", axis=1, inplace=True)
 #%%

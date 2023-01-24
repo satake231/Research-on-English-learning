@@ -1,0 +1,39 @@
+                                 OLS Regression Results                                
+=======================================================================================
+Dep. Variable:              B_アニメ_映画等   R-squared (uncentered):                   0.564
+Model:                            OLS   Adj. R-squared (uncentered):              0.497
+Method:                 Least Squares   F-statistic:                              8.370
+Date:                Tue, 24 Jan 2023   Prob (F-statistic):                    6.78e-12
+Time:                        15:43:32   Log-Likelihood:                         -51.885
+No. Observations:                 112   AIC:                                      133.8
+Df Residuals:                      97   BIC:                                      174.5
+Df Model:                          15                                                  
+Covariance Type:            nonrobust                                                  
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+READING                     -0.0594      0.046     -1.295      0.198      -0.150       0.032
+WRITING                      0.0183      0.050      0.369      0.713      -0.080       0.117
+LISTENING                    0.0714      0.043      1.652      0.102      -0.014       0.157
+SPEAKING                    -0.0643      0.047     -1.368      0.174      -0.157       0.029
+EXPERIENCE EXCEPT SCHOOL    -0.0082      0.043     -0.192      0.848      -0.093       0.076
+ENGLISH OF FAMILY            0.0030      0.037      0.083      0.934      -0.070       0.076
+EXPOSURE                     0.1332      0.049      2.728      0.008       0.036       0.230
+B_絵本等                        0.1593      0.111      1.434      0.155      -0.061       0.380
+B_英会話                       -0.0501      0.099     -0.507      0.614      -0.246       0.146
+B_英検_英検Jr                    0.1148      0.263      0.436      0.664      -0.408       0.638
+A_アニメ_映画等                    0.5149      0.104      4.944      0.000       0.308       0.722
+A_本                         -0.0462      0.133     -0.347      0.729      -0.310       0.218
+A_英会話                       -0.0937      0.095     -0.992      0.324      -0.281       0.094
+A_英検_英検Jr                    0.0374      0.102      0.365      0.716      -0.166       0.240
+university                  -0.0289      0.113     -0.256      0.799      -0.253       0.195
+==============================================================================
+Omnibus:                        9.564   Durbin-Watson:                   1.799
+Prob(Omnibus):                  0.008   Jarque-Bera (JB):                9.520
+Skew:                           0.687   Prob(JB):                      0.00856
+Kurtosis:                       3.393   Cond. No.                         47.4
+==============================================================================
+
+Notes:
+[1] R² is computed without centering (uncentered) since the model does not contain a constant.
+[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.

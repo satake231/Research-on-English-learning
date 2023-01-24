@@ -22,10 +22,11 @@ df.drop(['A_なし', 'B_なし'], axis=1, inplace=True)
 df.columns = ['GENDER', 'READING', 'WRITING', 'LISTENING', 'SPEAKING', 'CEFR', 'EXPERIENCE EXCEPT SCHOOL',
               'ENGLISH OF FAMILY', 'AVG_JUNIOR_HIGH', 'AVG_HIGH', 'USEFUL', 'EXPOSURE', 'B_アニメ_映画等',
               'B_塾', 'B_幼稚園', 'B_海外', 'B_絵本等', 'B_英会話', 'B_英検_英検Jr', 'B_音楽', 'A_アニメ_映画等',
-              'A_塾', 'A_学校', 'A_海外', 'A_音楽', 'A_英会話', 'A_英検_英検Jr', 'high school', 'professional student',
+              'A_塾', 'A_学校', 'A_海外', 'A_本', 'A_英会話', 'A_英検_英検Jr', 'high school', 'professional student',
               'university']
 #%%
-df.drop(['A_海外', 'B_海外', 'B_幼稚園', 'B_音楽', 'A_音楽', 'AVG_JUNIOR_HIGH', 'AVG_HIGH', 'GENDER'], axis=1,inplace=True)
+df.drop(['A_海外', 'B_海外', 'B_幼稚園', 'B_音楽', 'B_塾', 'A_塾', 'A_学校', 'AVG_JUNIOR_HIGH', 'AVG_HIGH', 'GENDER',
+         'high school', 'professional student', 'USEFUL'], axis=1,inplace=True)
 #%%
 # 重回帰用の関数作成
 def multiple_linear_regression(dataframe, dependent_name):
@@ -33,7 +34,7 @@ def multiple_linear_regression(dataframe, dependent_name):
     y = dataframe[dependent_name]
     model = sa.OLS(y, X)
     result = model.fit()
-    f = open('../Statistic_results/{}.txt'.format('add'+ dependent_name), 'w')
+    f = open('../Statistic_results/{}.txt'.format('new_'+ dependent_name), 'w')
     f.write(str(result.summary()))
     f.close()
 #%%
